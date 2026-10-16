@@ -1,64 +1,154 @@
 
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой первый сайт</title>
+
+    <meta name="description"
+          content="My personal portfolio, skills and web development projects.">
+
+    <title>My Portfolio | Web Developer</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-<body>
-    <header>
-        <h1>Привет! Я изучаю Vibe Coding</h1>
-        <p>Будущий веб-разработчик</p>
+    <header class="navbar">
+        <a class="logo" href="#home">My<span>Portfolio.</span></a>
+
+        <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Обо мне</h2>
-            <p>
-                Я изучаю веб-разработку и создаю свои первые проекты.
-                Моя цель — научиться разрабатывать сайты и веб-приложения.
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">HELLO, WORLD!</p>
+
+                <h1>
+                    I'm a future
+                    <span>Web Developer.</span>
+                </h1>
+
+                <p class="hero-description">
+                    I build websites, explore new technologies,
+                    and turn ideas into digital experiences.
+                </p>
+
+                <a class="button" href="#projects">
+                    Explore my work <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="images/profile.jpg"
+                    alt="Portrait of the portfolio author"
+                    width="420"
+                    height="480"
+                >
+                <div class="image-label">Learning. Building. Growing.</div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <p class="eyebrow">A LITTLE ABOUT ME</p>
+            <h2>Curious mind. Creative builder.</h2>
+
+            <p class="section-description">
+                I'm learning how to create modern, responsive websites
+                and web applications. I enjoy solving problems,
+                experimenting with ideas, and improving my skills
+                one project at a time.
             </p>
         </section>
 
-        <section>
-            <h2>Мои навыки</h2>
-            <ul>
-                <li>HTML — структура сайтов</li>
-                <li>CSS — оформление сайтов</li>
-                <li>JavaScript — изучаю основы</li>
-            </ul>
+        <section class="section" id="skills">
+            <p class="eyebrow">WHAT I'M LEARNING</p>
+            <h2>My skills</h2>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <span class="card-number">01</span>
+                    <h3>HTML</h3>
+                    <p>Building clear and accessible page structures.</p>
+                </article>
+
+                <article class="skill-card">
+                    <span class="card-number">02</span>
+                    <h3>CSS</h3>
+                    <p>Creating layouts, visual styles and animations.</p>
+                </article>
+
+                <article class="skill-card">
+                    <span class="card-number">03</span>
+                    <h3>JavaScript</h3>
+                    <p>Learning to make websites interactive.</p>
+                </article>
+            </div>
         </section>
 
-        
-<section>
-    <h2>Мои проекты</h2>
+        <section class="section" id="projects">
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>My projects</h2>
 
-    <div class="projects">
-        <article class="project-card">
-            <h3>Моё портфолио</h3>
-            <p>Мой первый сайт, созданный с помощью HTML и CSS.</p>
-            <span>HTML · CSS</span>
-        </article>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-top">
+                        <span>01 / FIRST PROJECT</span>
+                        <span aria-hidden="true">↗</span>
+                    </div>
 
-        <article class="project-card">
-            <h3>Task Manager</h3>
-            <p>Будущий проект для управления задачами на JavaScript.</p>
-            <span>JavaScript</span>
-        </article>
-    </div>
-</section>
+                    <h3>Personal Portfolio</h3>
 
+                    <p>
+                        My first website, built with HTML and CSS
+                        and published using GitHub Pages.
+                    </p>
 
-        <section>
-            <h2>Контакты</h2>
-            <p>Здесь позже появятся мои контактные ссылки.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>GitHub</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span>02 / IN PROGRESS</span>
+                        <span aria-hidden="true">↗</span>
+                    </div>
+
+                    <h3>Task Manager</h3>
+
+                    <p>
+                        A future interactive application for organizing
+                        tasks, tracking progress and staying productive.
+                    </p>
+
+                    <div class="tags">
+                        <span>JavaScript</span>
+                        <span>Web App</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>Have an idea? Let's build something.</h2>
+            <p>I'm always excited to learn and explore new opportunities.</p>
+            <a class="button" href="#home">Back to top ↑</a>
         </section>
     </main>
-</body>
 
+    <footer>
+        <p>© 2026 My Portfolio. Built with HTML & CSS.</p>
+    </footer>
 </body>
 </html>
